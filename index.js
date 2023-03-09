@@ -37,10 +37,9 @@ function handleRegister() {
     .then((response) => response.json())
     .then((res) => {
       alert('Registration completed successfully');
-      window.location.replace('/home.html');
     })
     .catch((err) => {
-      console.log(err);
+      alert(err);
     });
 }
 function handleLogin() {
@@ -57,9 +56,8 @@ function handleLogin() {
     .then((response) => response.json())
     .then((res) => {
       alert('login completed successfully');
-      window.location.replace('/home.html');
     })
     .catch((err) => {
-      console.log(err);
+      alert(err);
     });
 }
