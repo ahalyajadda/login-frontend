@@ -29,7 +29,7 @@ function handleRegister() {
   let email = document.getElementById('email').value;
   let password = document.getElementById('password').value;
   let data = { username: username, email: email, password: password };
-  fetch('http://localhost:5001/register', {
+  fetch('https://login-backend-1jjz.onrender.com/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
@@ -49,7 +49,7 @@ function handleLogin() {
   let password = document.getElementById('password1').value;
   let data = { username: username, email: email, password: password };
 
-  fetch('http://localhost:5001/login', {
+  fetch('https://login-backend-1jjz.onrender.com/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
